@@ -105,7 +105,6 @@ fig.update_layout(
 plot(fig)
 
 # Importing COVID-19 cases for the US states and their populations 
-#df_us = pd.read_csv('https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-states.csv')
 df_us = pd.read_csv('https://data.cdc.gov/api/views/9mfq-cb36/rows.csv?accessType=DOWNLOAD')
 df_us_population = pd.read_csv('http://www2.census.gov/programs-surveys/popest/datasets/2010-2019/national/totals/nst-est2019-alldata.csv')
 us_abbreviation = dict(json.loads(requests.get('https://gist.githubusercontent.com/mshafrir/2646763/raw/8b0dbb93521f5d6889502305335104218454c2bf/states_hash.json').text))
